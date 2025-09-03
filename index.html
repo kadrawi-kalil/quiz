@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Exams — Grades 1 to 12</title>
     <style>
+      .survey {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 30px;
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: 0 6px 18px rgba(17, 24, 39, 0.06);
+        text-align: center;
+      }
+
+      .survey h2 {
+        margin-top: 0;
+        font-size: 1.4rem;
+        color: #111827;
+      }
+
+      .survey p {
+        font-size: 1rem;
+        color: var(--muted);
+        margin: 18px 0 28px;
+        line-height: 1.6;
+      }
+
       :root {
         --bg: #f3f6fb;
         --card: #ffffff;
@@ -154,6 +177,23 @@
     </style>
   </head>
   <body>
+    <section class="survey">
+      <div class="survey-content">
+        <h2>تحديد أنماط التعلم للطلاب</h2>
+        <p>
+          عزيزي الطالب، يرجى الرد على الاستبانة التالية بعد تدوين اسمك وصفك،
+          وسجل إجابة واحدة لكل بند بعد قراءتك بدقة، بما يعبر عن شخصيتك.
+        </p>
+        <a
+          class="btn"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeg0SIJAodyBERKyYN_cyQYbVOQ-82Tjm-cMN0Z4sEHpSnWNw/viewform?usp=sf_link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          الانتقال إلى الاستبانة ↗
+        </a>
+      </div>
+    </section>
     <header>
       <h1>Online Exams — Grades 1 to 12</h1>
       <p>
@@ -184,8 +224,14 @@
         { grade: 5, url: "PUT_YOUR_LINK_HERE" },
         { grade: 6, url: "PUT_YOUR_LINK_HERE" },
         { grade: 7, url: "PUT_YOUR_LINK_HERE" },
-        { grade: 8, url: "https://docs.google.com/forms/d/e/1FAIpQLSfYJYh-iejb2C1ge46GMEZlGvNJZbtYnQq9fMt7mv0Al0NB3Q/viewform?usp=sf_link" },
-        { grade: 9, url: "https://docs.google.com/forms/d/e/1FAIpQLSfYJYh-iejb2C1ge46GMEZlGvNJZbtYnQq9fMt7mv0Al0NB3Q/viewform?usp=sf_link" },
+        {
+          grade: 8,
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSfYJYh-iejb2C1ge46GMEZlGvNJZbtYnQq9fMt7mv0Al0NB3Q/viewform?usp=sf_link",
+        },
+        {
+          grade: 9,
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSfYJYh-iejb2C1ge46GMEZlGvNJZbtYnQq9fMt7mv0Al0NB3Q/viewform?usp=sf_link",
+        },
         {
           grade: 10,
           url: "https://docs.google.com/forms/d/e/1FAIpQLSe0_yRscfqiZR4ey4ChflikN2ouxBGk9x-wcVEnFRnNpW7p7Q/viewform?usp=sf_link",
