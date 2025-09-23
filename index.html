@@ -195,7 +195,7 @@
       </div>
     </section>
     <header>
-      <h1>Online Exams — Grades 1 to 12</h1>
+      <h1>Diagnostic Test — Grades 1 to 12</h1>
       <p>
         Select your grade and click <strong>Start Exam</strong>. Each opens in a
         new tab.
@@ -206,47 +206,48 @@
       <!-- Cards will be generated here by JavaScript -->
     </main>
 
-    <p class="note">
-      To change any link, edit the `forms` array near the end of this file and
-      replace `"PUT_YOUR_LINK_HERE"` with the Google Forms URL.
-    </p>
-
     <script>
       // ----- EDIT THIS: Put your 12 form URLs here in order grade 1 -> grade 12 -----
       const forms = [
         {
           grade: 1,
-          url: "https://docs.google.com/forms/d/e/1FAIpQLScGI-HwMZKUCGtWlZqSa0zBjNJoUAOFFJi3t0T9zxbFc5mrdA/viewform??usp=sf_link",
+          url: "https://forms.gle/xdi54UNFiTmkrcUk7",
         },
         {
           grade: 2,
-          url: "https://docs.google.com/forms/d/e/1FAIpQLScGI-HwMZKUCGtWlZqSa0zBjNJoUAOFFJi3t0T9zxbFc5mrdA/viewform?usp=preview",
+          url: "https://forms.gle/xdi54UNFiTmkrcUk7",
         },
         {
           grade: 3,
-          url: "https://docs.google.com/forms/d/e/1FAIpQLScGI-HwMZKUCGtWlZqSa0zBjNJoUAOFFJi3t0T9zxbFc5mrdA/viewform?usp=preview",
+          url: "https://forms.gle/xdi54UNFiTmkrcUk7",
         },
         {
           grade: 4,
-          url: "https://docs.google.com/forms/d/e/1FAIpQLSfRn1au-kGia8gWBlzCjzaaUsFBrnEYzoUDzUIj0-DHTHgswg/viewform?usp=sf_link",
+          url: "https://forms.gle/xdi54UNFiTmkrcUk7",
         },
-        { grade: 5, url: "PUT_YOUR_LINK_HERE" },
-        { grade: 6, url: "PUT_YOUR_LINK_HERE" },
-        { grade: 7, url: "https://forms.gle/nmu4KfBEoCxjPJPP9" },
+        { grade: 5, url: "https://forms.gle/VN2bHgLx2UxQQjEd8" },
+        { grade: 6, url: "https://forms.gle/VN2bHgLx2UxQQjEd8" },
+        { grade: 7, url: "https://forms.gle/VN2bHgLx2UxQQjEd8" },
         {
           grade: 8,
-          url: "https://docs.google.com/forms/d/e/1FAIpQLSfYJYh-iejb2C1ge46GMEZlGvNJZbtYnQq9fMt7mv0Al0NB3Q/viewform?usp=sf_link",
+          url: "https://forms.gle/VN2bHgLx2UxQQjEd8",
         },
         {
           grade: 9,
-          url: "https://docs.google.com/forms/d/e/1FAIpQLSfYJYh-iejb2C1ge46GMEZlGvNJZbtYnQq9fMt7mv0Al0NB3Q/viewform?usp=sf_link",
+          url: "https://forms.gle/EFnWkBTEZ2ejYiz76",
         },
         {
           grade: 10,
-          url: "https://docs.google.com/forms/d/e/1FAIpQLSe0_yRscfqiZR4ey4ChflikN2ouxBGk9x-wcVEnFRnNpW7p7Q/viewform?usp=sf_link",
+          url: "https://forms.gle/EFnWkBTEZ2ejYiz76",
         },
-        { grade: 11, url: "PUT_YOUR_LINK_HERE" },
-        { grade: 12, url: "PUT_YOUR_LINK_HERE" },
+        {
+          grade: 11,
+          url: "https://forms.gle/EFnWkBTEZ2ejYiz76",
+        },
+        {
+          grade: 12,
+          url: "https://forms.gle/EFnWkBTEZ2ejYiz76",
+        },
       ];
 
       const grid = document.getElementById("grid");
@@ -260,7 +261,7 @@
         card.innerHTML = `
         <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
           <div class="grade-badge">Grade ${item.grade}</div>
-          <div style="font-size:0.85rem;color:var(--muted)">Duration: 45 min</div>
+          <div style="font-size:0.85rem;color:var(--muted)">Duration: 15 min</div>
         </div>
 
         <h2>Grade ${item.grade} — ICT Exam</h2>
