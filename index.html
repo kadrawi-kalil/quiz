@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robotics Club | نادي الروبوتات</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f0f8ff;
+        color: #333;
+      }
+      header {
+        background: #1e3a8a;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      header nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      header .lang-toggle {
+        background: white;
+        color: #1e3a8a;
+        border: none;
+        padding: 5px 10px;
+        margin-left: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .hero {
+        background: url("hero.jpg") center/cover no-repeat;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 1px 1px 4px #000;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      section {
+        padding: 2rem;
+        max-width: 1000px;
+        margin: auto;
+      }
+      h2 {
+        margin-bottom: 1rem;
+        color: #1e3a8a;
+      }
+      /* Carousel styling */
+      .carousel {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 2rem;
+      }
+      .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      .carousel img {
+        width: 100%;
+        flex-shrink: 0;
+      }
+      .carousel button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+      .carousel .prev {
+        left: 10px;
+      }
+      .carousel .next {
+        right: 10px;
+      }
+      footer {
+        background: #1e3a8a;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+      /* RTL Support */
+      [dir="rtl"] {
+        text-align: right;
+      }
+      [dir="rtl"] header nav a {
+        margin: 0 0 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">🤖 Robotics Club</h1>
+      <nav>
+        <a href="#about" data-en="About" data-ar="حول النادي">About</a>
+        <a href="#gallery" data-en="Gallery" data-ar="المعرض">Gallery</a>
+        <a href="#events" data-en="Events" data-ar="الفعاليات">Events</a>
+        <a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+        <button class="lang-toggle" id="langBtn">عربي</button>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h1
+        id="heroText"
+        data-en="Building the Future, One Robot at a Time"
+        data-ar="نبني المستقبل، روبوتًا تلو الآخر"
+      >
+        Building the Future, One Robot at a Time
+      </h1>
+    </div>
+
+    <section id="about">
+      <h2 data-en="About Our Club" data-ar="حول نادينا">About Our Club</h2>
+      <p
+        data-en="The Robotics Club is a place where students learn creativity, teamwork, and technology by building and programming robots. We explore innovation while having fun!"
+        data-ar="نادي الروبوتات هو مكان يتعلم فيه الطلاب الإبداع والعمل الجماعي والتكنولوجيا من خلال بناء وبرمجة الروبوتات. نحن نستكشف الابتكار ونستمتع بالتعلم معًا!"
+      >
+        The Robotics Club is a place where students learn creativity, teamwork,
+        and technology by building and programming robots. We explore innovation
+        while having fun!
+      </p>
+    </section>
+
+    <section id="gallery">
+      <h2 data-en="Gallery" data-ar="المعرض">Gallery</h2>
+      <h3
+        data-en="September 2025 – First Meeting"
+        data-ar="سبتمبر 2025 – الاجتماع الأول"
+      >
+        September 2025 – First Meeting
+      </h3>
+      <div class="carousel" data-index="0">
+        <div class="carousel-track">
+          <img src="sat13-09/img1.jpeg" alt="First Meeting 1" />
+          <img src="sat13-09/img2.jpeg" alt="First Meeting 2" />
+          <img src="sat13-09/img3.jpeg" alt="First Meeting 3" />
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+      </div>
+      <h3
+        data-en="September 2025 – First Meeting"
+        data-ar="سبتمبر 2025 – الاجتماع الأول"
+      >
+        September 2025 – First Meeting
+      </h3>
+      <div class="carousel" data-index="0">
+        <div class="carousel-track">
+          <img src="sat13-09/img1.jpeg" alt="First Meeting 1" />
+          <img src="sat13-09/img2.jpeg" alt="First Meeting 2" />
+          <img src="sat13-09/img3.jpeg" alt="First Meeting 3" />
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+      </div>
+    </section>
+
+    <section id="events">
+      <h2 data-en="Upcoming Events" data-ar="الفعاليات القادمة">
+        Upcoming Events
+      </h2>
+      <ul>
+        <li
+          data-en="December 2025 – Robotics Workshop"
+          data-ar="ديسمبر 2025 – ورشة عمل الروبوتات"
+        >
+          December 2025 – Robotics Workshop
+        </li>
+        <li
+          data-en="January 2026 – Local Competition"
+          data-ar="يناير 2026 – مسابقة محلية"
+        >
+          January 2026 – Local Competition
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2 data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h2>
+      <p
+        data-en="Email: roboticsclub@school.com"
+        data-ar="البريد الإلكتروني: roboticsclub@school.com"
+      >
+        Email: roboticsclub@school.com
+      </p>
+      <p data-en="Phone: +123 456 789" data-ar="الهاتف: +123 456 789">
+        Phone: +123 456 789
+      </p>
+    </section>
+
+    <footer
+      data-en="© 2025 Robotics Club – Our School"
+      data-ar="© 2025 نادي الروبوتات – مدرستنا"
+    >
+      © 2025 Robotics Club – Our School
+    </footer>
+
+    <script>
+      const langBtn = document.getElementById("langBtn");
+      let currentLang = "en";
+
+      langBtn.addEventListener("click", () => {
+        currentLang = currentLang === "en" ? "ar" : "en";
+        document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
+        document.documentElement.lang = currentLang;
+
+        document.querySelectorAll("[data-en]").forEach((el) => {
+          el.textContent = el.getAttribute(`data-${currentLang}`);
+        });
+
+        langBtn.textContent = currentLang === "en" ? "عربي" : "English";
+      });
+    </script>
+  </body>
+</html>
